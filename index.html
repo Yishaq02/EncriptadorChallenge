@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador · Alura</title>
+</head>
+<body>
+    <header class="header">
+        <img class="Logo" src="imagenes/Logo.png" alt="">
+    </header>
+    <main class="main">
+        <section class="intro">
+            <video src="videos/smoke.mp4" autoplay muted></video>
+            <h1>
+                <span>A</span>
+                <span>L</span>
+                <span>U</span>
+                <span>R</span>
+                <span>A</span>
+            </h1>
+            <h2>Challenge Encriptador</h2>
+        </section>
+        <section class="area1">
+            <div class="texto-area">
+                <textarea placeholder="Ingrese un texto" name="" id="texto" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="restricciones">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <input onclick="btnEncriptar(texto.value);" type="button" id="btn1" class="boton" value="Encriptar">
+                <input onclick="btnDesencriptar(texto.value);" type="button" id="btn2" class="boton" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="area2">
+            <div class="divArea2">
+                <img src="imagenes/Rectangle.png" alt="" class="rectangulo" id="rec">
+
+                <div class="imagen2" id="imagen2Id">
+                    <img src="imagenes/Muñeco.png" alt="" class="muñeco" id="m_neco" >
+                </div>
+                
+                <div class="textfinal" id="textofinalId">
+                    <p id="texto3">Ningun mensaje fue encontrado</p>
+                </div>
+
+                <div class="textfinal2" id="textofinal2Id">
+                    <p id="texto2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <!-- <p class="textfinal2" id="texto2">Ningun mensaje fue encontrado</p>
+                <p class="textfinal" id="texto2">Ingresa el texto que deseas encriptar o desencriptar</p> -->
+                <div class="botonCopiaCaja">
+                    <button class="botonCopiar" id="input" onclick="copiarContenido()">Copiar</button> 
+                </div>
+                
+                <!-- <div class="botonCopiar">
+                    <input onclick="copiarContenido()" type="button" id="input" value="Copiar">
+                    <button id="input" onclick="copiarContenido()">Copiar</button> 
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&#9824; Code by Isaac Atilano Tobón &#9824;</p>
+        <div><a href="https://github.com/Yishaq02?tab=repositories"><i style="font-size:24px" class="fa">&#xf09b;</i></a></div>
+        <div><a href="https://www.linkedin.com/in/isaac-atilano"><i style="font-size:24px" class="fa">&#xf08c;</i></a></div>
+    </footer>
+    <script src="app.js"></script> 
+</body>
+</html>

@@ -1,0 +1,496 @@
+/* tamaño del body: 
+width: 1920px; x height: 974.67px; */
+html{
+    width: 100%;
+    height: 100%;
+    /* width: 1920px; */
+    /* height: 974.67px; */
+}
+
+body {
+    background: rgb(12,69,138);
+    background: linear-gradient(80deg, rgba(12,69,138,1) 0%, rgba(5,25,51,1) 49%, rgba(12,69,138,1) 100%);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INTRO */
+.intro{
+    visibility: hidden; 
+    height:0px;
+    background: #000;
+    visibility: hidden;
+}
+
+.intro::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgb(22, 123, 247),rgb(163, 255, 191));
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+
+.intro video{
+    object-fit: cover;
+}
+
+.intro h1{
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;  
+}
+
+.intro h2{
+    opacity: 0;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+    animation: animate2 1s linear forwards;
+}
+
+.intro h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+    0%
+    {
+        opacity: 0;
+        transform:rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform:rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+@keyframes animate2{
+    0%
+    {
+        opacity: 0;
+        transform:rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    50%
+    {
+        opacity: 0.5;
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform:rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+.intro h1 span:nth-child(1){
+    animation-delay: 3.5s;
+}
+.intro h1 span:nth-child(2){
+    animation-delay: 4s;
+}
+.intro h1 span:nth-child(3){
+    animation-delay: 4.5s;
+}
+.intro h1 span:nth-child(4){
+    animation-delay: 5s;
+}
+.intro h1 span:nth-child(5){
+    animation-delay: 5.5s;
+}
+
+.intro h2{
+    animation-delay: 5.85s;
+}
+
+/* HEADER */
+header{
+    background: #051d3b;
+    width: 100%;
+    /* width: 1920px; */
+    height: 90px;
+    /* height: 15vh; */
+    /* justify-content: space-between; */
+    text-align: left;
+}
+
+header img{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;   
+}
+
+main{
+    margin-top: 1%;
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 1920px;
+    height: 834.67;
+}
+
+/* TEXTO AREA */
+
+.area1{
+    width: 70%;
+    height: 800px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.texto-area{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 35px;
+}
+
+.texto-area #texto{
+    color: #fff;
+    font-weight: 400;
+    background: linear-gradient(80deg, rgba(12,69,138,1) 0%, rgba(5,25,51,1) 71%);
+    font-size: 40px;
+    border: 1px solid #0073ff;
+    border-radius: 10px;
+    width: 100%;
+    height: 700px;
+    padding: 10px 0px 0px 1em;
+}
+
+.texto-area #texto:hover{
+    border:1px solid #00c86f;
+}
+
+/* RESTRICCIONES */
+
+.restricciones{
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.restricciones p{
+    color: #E5F1FF;
+    font-size: 25px;
+}
+
+/* Bottons */
+
+.botones{
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: bottom
+    
+
+}
+
+.area1 .botones{
+    vertical-align: bottom;
+}
+
+.botones .boton, #input{
+    font-size: 1em;
+    width: 30%;
+    height: 40px;
+    color: #00c86f;
+    border-radius: 10px;
+    border: 1px solid #0073ff;
+    background: #012E4A;
+    vertical-align: bottom;
+}
+
+.botones .boton:hover, #input:hover{
+    border: 1px solid #00c86f;
+}
+
+/* area 2 */
+
+.area2{
+    width: 572px;
+    height: 800px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.divArea2{
+    width: 95%;
+    height: 834.67px;
+    position: relative;
+}
+
+.rectangulo{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 87%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.muñeco{
+    position: absolute;
+    z-index: 1;
+    width: 259.2px;
+    height: 259.2px;
+    right: 0px;
+    bottom: 0px;
+    left: 30%;
+    top: 30%;
+}
+
+.textfinal{
+    font-style: italic;
+    font-size: 1.5em;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+
+#input{
+    height: 39.66666px;
+    width: 184.66666px;
+}
+.botonCopiar{
+    top: 90%;
+    left: 40%;
+    border: 1px solid #0073ff;
+    position: absolute;
+    z-index: 1;
+} 
+
+.botonCopiar:hover{
+    border: 1px solid #00c86f;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 85.67px;
+    margin: 0 auto;
+    text-align: center;
+    background: #051d3b;
+}
+
+footer p{
+    margin-top: 2.3em;
+    font-size: 1.5em;
+    color:#E5F1FF;
+}
+
+/* si la ventana es mayor de 600px pero menor de 1200px */
+/* @media (600px <= width <= 1200px ){
+
+} */
+
+/* TELEFONOS */
+
+@media screen and (320px <= device-width <= 430px){
+    main{
+        width: 100%;
+        height: 80%;
+    }
+
+    header img{
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 10px;   
+    }
+
+    .area1{
+        text-align: inherit;
+        width: 85%;
+        /* width: 100%; */
+        height: 380px;
+    }
+
+    .texto-area{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .texto-area #texto{
+        font-size: 20px;
+        width: 90%;
+        height: 250px;
+    }
+
+    .restricciones p{
+        font-size: 1em;
+    }
+
+    .botones .boton, #input{
+        width: 40%;
+    }
+
+    .area2{
+        width: 100%;
+        height: 30%;
+    }
+
+    .divArea2{
+        width: 85%;
+        height: 100%;
+    }
+
+    .muñeco{
+        visibility: hidden;
+    }
+
+    .textfinal{
+        font-size: 1.2em;
+    }
+
+    .botonCopiar{
+        left: 32%;
+        top: 60%;
+    }
+
+    footer{
+        height: 10%;
+    }
+
+    footer p{
+        margin-top: 0;
+        font-size: 1em;
+        width: 85%;
+    }
+
+    .intro h1{
+        font-size: 2.5em;
+        width: 85%;
+    }
+
+    .intro h2{
+        font-size: 1em;
+        width: 85%;
+        top: 54%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    @media screen and (min-height: 1174px){
+        main{
+            width: 100%;
+            height: 80%;
+        }
+    
+        header img{
+            margin-top: 10px;
+            margin-left: 0;
+            padding: 10px;   
+        }
+    
+        .area1{
+            text-align: inherit;
+            width: 85%;
+            /* width: 100%; */
+            height: 380px;
+        }
+    
+        .texto-area{
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
+    
+        .texto-area #texto{
+            font-size: 20px;
+            width: 90%;
+            height: 250px;
+        }
+    
+        .restricciones p{
+            font-size: 1em;
+        }
+    
+        .botones .boton, #input{
+            width: 40%;
+        }
+    
+        .area2{
+            width: 100%;
+            height: 30%;
+        }
+    
+        .divArea2{
+            width: 85%;
+            height: 100%;
+        }
+    
+        .muñeco{
+            visibility: hidden;
+        }
+    
+        .textfinal{
+            font-size: 1.2em;
+        }
+    
+        .botonCopiar{
+            left: 32%;
+            top: 60%;
+        }
+    
+        footer{
+            height: 10%;
+        }
+    
+        footer p{
+            margin-top: 0;
+            font-size: 1em;
+            width: 85%;
+        }
+    
+        .intro h1{
+            font-size: 2.5em;
+            width: 85%;
+        }
+    
+        .intro h2{
+            font-size: 1em;
+            width: 85%;
+            top: 54%;
+        }
+    } 
+}
+
+
+/* @media (375px = )) */
